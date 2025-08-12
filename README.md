@@ -44,7 +44,7 @@ button 2 - arduino mega
 
 
 usage:
-First build the project, then take the video you want to watch as .MP4, then use this command ```ffmpeg -i input.mp4 -vf "scale=128:64" -vsync 0 "frames/%08d.png"``` before using the command, you have to move your .mp4 file to the project file, then rename it to "input.mp4". 
+First build the project, then take the video you want to watch as .MP4, then use this command ```ffmpeg -i input.mp4 -vf "scale=128:64" -vsync 0 "%08d.png"``` before using the command, you have to move your .mp4 file to the project file, then rename it to "input.mp4". 
 After the frames are extracted, use one of the 2 .exe files on the terminal in the direction of the project like this:
 
 If you want filtered result with Floyd–Steinberg dithering which makes text harder to read but gives depth perception, use this command on the terminal:
